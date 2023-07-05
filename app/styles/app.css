@@ -298,9 +298,7 @@ main {
 .product-option-name {
   font-weight: 700;
 }
-.product-option-value {
-  display: inline-block;
-}
+
 .product-option-value:not(last-child) {
   margin-right: 10px;
 }
@@ -309,16 +307,19 @@ main {
   position: fixed;
   width: 0;
 }
-.product-option-value label {
+.product-option-value  {
   display: inline-block;
   font-family: sans-serif, Arial;
   font-size: 16px;
   border-bottom: 1px solid transparent;
+  text-decoration: none;
+  color: grey;
 }
-.product-option-value input[type="radio"]:checked + label {
-  border-color: black;
+.product-option-value.selected {
+  border-bottom: 1px solid black;
+  color: black;
 }
-.product-option-value label:hover {
+.product-option-value:hover {
   border-color: grey;
 }
 .article-page {

@@ -65,9 +65,10 @@ export default function App() {
            {name}
           </Link>
           <ul className="header-navigation">
-           <li><a href=""></a>Link</li>
-           <li><a href=""></a>Link</li>
-           <li><a href=""></a>Link</li>
+           <li><a href="/collections">Collections</a></li>
+           <li><a href="/collections/shirts">Shirts</a></li>
+           <li><a href="/collections/jackets">Jackets</a></li>
+           <li><a href="/collections/tops">Tops</a></li>
           </ul>
           <div className="header-cart-link">Cart</div>
         </div>

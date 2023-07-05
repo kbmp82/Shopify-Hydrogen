@@ -12,14 +12,14 @@ export function meta() {
   }
   
   export async function loader({context}) {
-    const data = await context.storefront.query(QUERY);
-    return {data};
+    const {products} = await context.storefront.query(QUERY);
+    return {products};
   }
   
 
 export default function Catalog(){
 
-  const {data: {products: {nodes}}} = useLoaderData();
+  const {products: {nodes}} = useLoaderData();
     return(
         <>
         <Suspense>
