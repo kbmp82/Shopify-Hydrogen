@@ -1,12 +1,12 @@
 import {
   Links,
+  Link,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
   useLoaderData,
 } from '@remix-run/react';
-import { Layout } from './components/Layout';
 import styles from './styles/app.css';
 import favicon from '../public/favicon.svg';
 import { Seo } from '@shopify/hydrogen';
@@ -55,12 +55,29 @@ export default function App() {
         <Seo/>
         <Meta />
         <Links />
-       
       </head>
       <body>
-        <Layout>
-        <Outlet />
-        </Layout>
+      <header
+        role="banner"
+      >
+        <div className="container header-inner">
+          <Link to="/" className="header-logo">
+           {name}
+          </Link>
+          <ul className="header-navigation">
+           <li><a href=""></a>Link</li>
+           <li><a href=""></a>Link</li>
+           <li><a href=""></a>Link</li>
+          </ul>
+          <div className="header-cart-link">Cart</div>
+        </div>
+      </header>
+      <main
+        role="main"
+        id="mainContent"
+      >
+         <Outlet />
+      </main>
         <ScrollRestoration />
         <Scripts />
       </body>

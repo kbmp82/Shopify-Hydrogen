@@ -4,6 +4,7 @@
   --light-background: #fafafc;
   --product-item-padding: 15px;
   --standard-font-size: 19px;
+  --discounted-font-size: 16px;
   --menu-link-item-color: #636366;
   --standard-font: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
@@ -136,12 +137,14 @@ main {
   height: 100%;
 }
 .product-grid-item-title {
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 .product-grid-prices {
   display: flex;
-  grid-gap: 5px;
+  grid-gap: 10px;
+  align-items: flex-end;
 }
+
 .article-grid-item-title {
   text-decoration: none;
   color: var(--menu-link-item-color);
