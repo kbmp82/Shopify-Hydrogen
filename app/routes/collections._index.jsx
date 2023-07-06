@@ -23,7 +23,7 @@ export default function Catalog(){
     return(
         <>
         <Suspense>
-            <div className="catalog-page container">
+            <div className="container">
                 <div className="product-grid">
                   {nodes.map((product, index) =>{
                     return (

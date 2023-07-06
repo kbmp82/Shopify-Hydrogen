@@ -37,7 +37,7 @@ export default function Collection() {
   return (
     <>
       <Suspense>
-        <div className="catalog-page container">
+        <div className="container">
           <h1>{collection.title}</h1>
           <div className="product-grid">
             {nodes.map((product, index) => {

@@ -63,7 +63,7 @@ export default function Product() {
         <div className="product-page container">
           <ProductDetails product={product} selectedVariant={selectedVariant}/>
         </div>
-        <PrintJson data={product} />
+        {/* <PrintJson data={product} /> */}
       </Suspense>
     </>
   );
